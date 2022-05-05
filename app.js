@@ -43,6 +43,10 @@ const sortByAgeDeath = inventors.sort(
 console.log(sortByAgeDeath);
 // Array.prototype.reduce()
 // 5. How many years did all the inventors live?
+const yearsLived = inventors.reduce(function (total, inventor) {
+  return total + (inventor.passed - inventor.year);
+}, 0);
+console.log(yearsLived);
 
 const people = [
   "Becker, Carl",
