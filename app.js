@@ -93,6 +93,10 @@ const people = [
 
 // Array.prototype.map()
 // 6. Map the people array such that the new array consists of strings with the names formatted as "First Last", e.g., "Becker, Carl" should be mapped to "Carl Becker".
+const firstAndLast = people.map((person) =>
+  person.split(",").reverse().join(" ")
+);
+console.log(firstAndLast);
 
 const data = [
   "car",
