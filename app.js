@@ -118,6 +118,11 @@ const data = [
 // Array.prototype.reduce()
 // 7. Count the number of instances for each of the data items.
 // Hint:  Return an object where the keys are 'car', 'truck', etc. and the values are the count.
+const vehicles = data.reduce((acc, vehicle) => {
+  acc[vehicle] = acc[vehicle] ? acc[vehicle] + 1 : 1;
+  return acc;
+}, {});
+console.log(vehicles);
 
 const devs = [
   { name: "Wes", year: 1988 },
