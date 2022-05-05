@@ -37,7 +37,10 @@ const birthdate = inventors.sort(function (a, b) {
 });
 console.log(birthdate);
 // 4. Sort the inventors by years lived from shortest to longest lived
-
+const sortByAgeDeath = inventors.sort(
+  (a, b) => a.passed - a.year - (b.passed - b.year)
+);
+console.log(sortByAgeDeath);
 // Array.prototype.reduce()
 // 5. How many years did all the inventors live?
 
