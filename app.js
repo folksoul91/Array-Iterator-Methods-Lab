@@ -133,9 +133,12 @@ const devs = [
 
 // Array.prototype.some()
 // 8. Check if at least one person is 19 or older?
-
+const ageLimit = devs.some((dev) => 2022 - dev.year >= 19);
+console.log(ageLimit);
 // Array.prototype.every()
 // 9. Check if everyone is 19 or older?
+const noAgeLimit = devs.every((dev) => 2022 - dev.year >= 19);
+console.log(noAgeLimit);
 
 const comments = [
   { text: "Love this!", id: 523423 },
@@ -147,6 +150,9 @@ const comments = [
 
 // Array.prototype.find()
 // 10. Find the comment with the id of 823423
-
+const locateId = comments.find((comment) => comment.id === 823423);
+console.log(locateId);
 // Array.prototype.findIndex()
 // 11. Find the index of the comment with an id of 123523
+const locateIndex = comments.findIndex((comment) => comment.id === 123523);
+console.log(locateIndex);
