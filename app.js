@@ -25,6 +25,10 @@ console.log(yearBorn);
 
 // Array.prototype.map()
 // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties
+const firstAndLastName = inventors.map(function (inventor) {
+  return { first: inventor.first, last: inventor.last };
+});
+console.log(firstAndLastName);
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
